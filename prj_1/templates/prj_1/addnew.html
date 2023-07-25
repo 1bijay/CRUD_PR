@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New person</title>
+</head>
+<body>
+<h1>Add new person</h1>
+<form action="../save/" method="post">
+    {% csrf_token %}
+    <p>ID: <input type="text" name="txt1"></p>
+    <p>NAME:<input type="text" name="txt2"> </p>
+    <p>ADDRESS:<input type="text" name="txt3"> </p>
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>
